@@ -1,0 +1,47 @@
+{
+  "success": 1,
+  "activities": [
+    {
+      "action": "listed",
+      "price_USD": 1.04,
+      "used": false
+    },
+    {
+      "action": "listed",
+      "price_USD": 1.04,
+      "used": false
+    },
+    {
+      "action": "listed",
+      "price_USD": 1.04,
+      "used": false
+    },
+    {
+      "action": "listed",
+      "price_USD": 1.04,
+      "used": false
+    },
+    {
+      "action": "listed",
+      "price_USD": 0.95,
+      "used": false
+    },
+    {
+      "action": "purchased",
+      "price_USD": 0.95,
+      "used": false
+    },
+    {
+      "action": "listed",
+      "price_USD": 1.09,
+      "used": false
+    },
+    {
+      "action": "purchased",
+      "price_USD": 1.03,
+      "used": false
+    }
+  ],
+  "date": "2024-04-20T04:56:29.000Z",
+  "timestamp": 1713588989
+}

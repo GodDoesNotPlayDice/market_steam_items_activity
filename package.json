@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "html-to-json-parser": "^2.0.1",
+    "playwright": "^1.43.1",
+    "steam-market-fetcher": "^2.1.3"
+  }
+}
