@@ -5,7 +5,7 @@ const market = new SteamMarketFetcher({
     format: 'json'
 });
 
-fs.readFile('item_data.json', 'utf-8', (err, data) => {
+fs.readFile('./data/item_info.json', 'utf-8', (err, data) => {
     if (err) {
         console.log('Error reading file:', err);
     } else {
