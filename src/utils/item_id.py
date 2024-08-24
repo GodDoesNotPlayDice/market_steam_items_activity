@@ -1,10 +1,17 @@
 from playwright.sync_api import sync_playwright
-import dotenv, json
+import json
+import time
+import os
 
-dot_env_path = '../config/.env'
+items = {
+    "Nightmare Case": "https://steamcommunity.com/market/listings/730/Dreams%20%26%20Nightmares%20Case",
+}
 
-url = dotenv.get_key(dot_env_path, 'ITEM_URL')
+path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/item_info.json'))
 
+# El codigo extrae el item_nameid y el appid de la urls[0] de un item en steam market
+# item_name_id : lo toma desde las request de la network.
+# appid: se toma desde la urls[0] de la pagina.
 def get_item_ids(url):
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -27,13 +34,9 @@ def get_item_ids(url):
         page.unroute('**')
         browser.close()
         
-    print(f"Item nameid: {item_nameid[0]}, appid: {appid[0]}")
-    return {"item_nameid" : item_nameid[0], "appid" : appid[0]}
+    print(f"Item nameid: {item_nameid[0]}, appid: {appid[0]}, name: {list(items.keys())[0]}")
+    return {"item_nameid": item_nameid[0], "appid": appid[0], "name": list(items.keys())[0]}
 
-with open('./data/item_info.json', "w") as f:
-    json.dump(get_item_ids(url), f)
+with open(path, "w") as f:
+    json.dump(get_item_ids(items['Nightmare Case']), f)
 print('done')
-        
-
-
-
