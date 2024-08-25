@@ -7,7 +7,19 @@ items = {
     "Nightmare Case": "https://steamcommunity.com/market/listings/730/Dreams%20%26%20Nightmares%20Case",
 }
 
-path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/item_info.json'))
+path = os.path.abspath(os.path.join('src', 'data'))
+
+if not os.path.exists(path):
+    try:
+        print('Creating data folder...')
+        os.makedirs(path, exist_ok=True)
+        print(f'Data folder created at: {path}')
+    except OSError as e:
+        print(f'Failed to create data folder: {e}')
+        exit(1)
+else:
+    print(f'Data folder already exists at: {path}')
+
 
 # El codigo extrae el item_nameid y el appid de la urls[0] de un item en steam market
 # item_name_id : lo toma desde las request de la network.
@@ -37,7 +49,7 @@ def get_item_ids(url):
     print(f"Item nameid: {item_nameid[0]}, appid: {appid[0]}, name: {list(items.keys())[0]}")
     return {"item_nameid": item_nameid[0], "appid": appid[0], "name": list(items.keys())[0]}
 
-with open(path, "+w") as f:
+with open(path + "/item_info.json", "+w") as f:
     while True:
         item_info = get_item_ids(url=items["Nightmare Case"])
         if dict(item_info)['item_nameid'] is None:

@@ -11,7 +11,7 @@ export const fetch_data = async (item) => {
           const html_activity = await market.getItemActivity({
               item_nameid: item.item_nameid,
           });
-          const data = parseMarketActivity(html_activity);
+          const data = parseMarketActivity(html_activity, item.name);
           return data;  // Si la petición es exitosa, salimos del bucle y devolvemos los datos
       } catch (error) {
           console.error("Error al obtener o procesar los datos:", error);

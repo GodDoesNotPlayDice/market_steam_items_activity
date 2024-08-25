@@ -1,4 +1,4 @@
-export const parseMarketActivity = (activityData) => {
+export const parseMarketActivity = (activityData, item_name) => {
     const activities = activityData.activity;
     const parsedActivities = activities.reduce((accumulator, activity) => {
       let action;
@@ -19,14 +19,14 @@ export const parseMarketActivity = (activityData) => {
       }
   
       if (action) {
-        accumulator.push({ "action": action, "price" : price_USD, timestamp: activityData.timestamp});
+        accumulator.push({ "action": action, "price" : price_USD, timestamp: activityData.timestamp, name: item_name });
       }
   
       return accumulator;
     }, []);
   
     const date = new Date(activityData.timestamp * 1000);
-  
+    // console.log(parsedActivities);
     return {
       success: activityData.success,
       activities: parsedActivities,

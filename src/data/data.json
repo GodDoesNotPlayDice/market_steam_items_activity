@@ -3,84 +3,112 @@
   "activities": [
     {
       "action": "listed",
-      "price": 1.23,
-      "timestamp": 1724592153
+      "price": 1.1,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "listed",
-      "price": 1.23,
-      "timestamp": 1724592153
+      "price": 1.09,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "purchased",
+      "price": 1.1,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "listed",
-      "price": 1.23,
-      "timestamp": 1724592153
-    },
-    {
-      "action": "listed",
-      "price": 1.08,
-      "timestamp": 1724592153
+      "price": 1.1,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "purchased",
       "price": 1.09,
-      "timestamp": 1724592153
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "purchased",
-      "price": 1.09,
-      "timestamp": 1724592153
-    },
-    {
-      "action": "purchased",
-      "price": 1.08,
-      "timestamp": 1724592153
-    },
-    {
-      "action": "purchased",
-      "price": 1.09,
-      "timestamp": 1724592153
-    },
-    {
-      "action": "purchased",
-      "price": 1.09,
-      "timestamp": 1724592153
-    },
-    {
-      "action": "purchased",
-      "price": 1.09,
-      "timestamp": 1724592153
+      "price": 1.1,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "listed",
-      "price": 1.07,
-      "timestamp": 1724592153
+      "price": 1.19,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "listed",
-      "price": 1.08,
-      "timestamp": 1724592153
+      "price": 1.05,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "listed",
+      "price": 1.03,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "purchased",
+      "price": 1.05,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "purchased",
+      "price": 1.03,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "listed",
+      "price": 1.1,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "purchased",
       "price": 1.11,
-      "timestamp": 1724592153
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "purchased",
-      "price": 1.07,
-      "timestamp": 1724592153
+      "price": 1.11,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "purchased",
+      "price": 1.11,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
+    },
+    {
+      "action": "listed",
+      "price": 1.08,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
       "action": "purchased",
       "price": 1.08,
-      "timestamp": 1724592153
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     },
     {
-      "action": "listed",
-      "price": 1.07,
-      "timestamp": 1724592153
+      "action": "purchased",
+      "price": 1.1,
+      "timestamp": 1724595075,
+      "name": "Nightmare Case"
     }
   ],
-  "date": "2024-08-25T13:22:33.000Z"
+  "date": "2024-08-25T14:11:15.000Z"
 }

@@ -5,6 +5,7 @@ class Activity(BaseModel):
     action: str
     price: float
     timestamp: int
+    name: str
 
 class MarketData(BaseModel):
     success: int

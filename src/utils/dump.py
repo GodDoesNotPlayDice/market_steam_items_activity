@@ -5,7 +5,7 @@ from d_types import MarketData
 e_file = os.path.join(os.path.dirname(__file__), '../data/market_activity.xlsx')
 
 if not os.path.exists(e_file):
-    headers = ["action", "price", "timestamp"]
+    headers = ["action", "price", "timestamp", "name"]
     df = pd.DataFrame(columns=headers)
     df.to_excel(e_file, index=False, sheet_name='MarketActivity')
     print('Excel file created')

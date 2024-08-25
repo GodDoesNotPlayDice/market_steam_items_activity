@@ -11,6 +11,7 @@ const app = async (item) => {
         console.error("Error al escribir en el archivo:", err);
         return;
       } 
+      console.log(data)
       console.log("Archivo guardado correctamente");
     });  
   } catch (error) {
