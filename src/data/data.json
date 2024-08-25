@@ -3,35 +3,84 @@
   "activities": [
     {
       "action": "listed",
-      "price_USD": 1.19,
-      "used": false
+      "price": 1.23,
+      "timestamp": 1724592153
     },
     {
       "action": "listed",
-      "price_USD": 1.18,
-      "used": false
+      "price": 1.23,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "listed",
+      "price": 1.23,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "listed",
+      "price": 1.08,
+      "timestamp": 1724592153
     },
     {
       "action": "purchased",
-      "price_USD": 1.18,
-      "used": false
-    },
-    {
-      "action": "listed",
-      "price_USD": 1.18,
-      "used": false
+      "price": 1.09,
+      "timestamp": 1724592153
     },
     {
       "action": "purchased",
-      "price_USD": 1.18,
-      "used": false
+      "price": 1.09,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "purchased",
+      "price": 1.08,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "purchased",
+      "price": 1.09,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "purchased",
+      "price": 1.09,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "purchased",
+      "price": 1.09,
+      "timestamp": 1724592153
     },
     {
       "action": "listed",
-      "price_USD": 1.19,
-      "used": false
+      "price": 1.07,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "listed",
+      "price": 1.08,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "listed",
+      "price": 1.11,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "purchased",
+      "price": 1.07,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "purchased",
+      "price": 1.08,
+      "timestamp": 1724592153
+    },
+    {
+      "action": "listed",
+      "price": 1.07,
+      "timestamp": 1724592153
     }
   ],
-  "date": "2024-08-24T03:38:35.000Z",
-  "timestamp": 1724470715
+  "date": "2024-08-25T13:22:33.000Z"
 }

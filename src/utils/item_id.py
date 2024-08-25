@@ -37,6 +37,12 @@ def get_item_ids(url):
     print(f"Item nameid: {item_nameid[0]}, appid: {appid[0]}, name: {list(items.keys())[0]}")
     return {"item_nameid": item_nameid[0], "appid": appid[0], "name": list(items.keys())[0]}
 
-with open(path, "w") as f:
-    json.dump(get_item_ids(items['Nightmare Case']), f)
-print('done')
+with open(path, "+w") as f:
+    while True:
+        item_info = get_item_ids(url=items["Nightmare Case"])
+        if dict(item_info)['item_nameid'] is None:
+            print('Failed to get item_nameid')
+        else:
+            break
+    json.dump(item_info, f)
+    print('Item info saved to item_info.json')

@@ -19,7 +19,7 @@ export const parseMarketActivity = (activityData) => {
       }
   
       if (action) {
-        accumulator.push({ action, price_USD, used: false });
+        accumulator.push({ "action": action, "price" : price_USD, timestamp: activityData.timestamp});
       }
   
       return accumulator;
@@ -31,6 +31,5 @@ export const parseMarketActivity = (activityData) => {
       success: activityData.success,
       activities: parsedActivities,
       date: date,
-      timestamp: activityData.timestamp,
     };
   }
