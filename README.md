@@ -10,10 +10,10 @@ items = {
 
 
 ## Install dependencies
-`python -m venv venv`
-`pip install -r requirements.txt`
-`npm i`
-`playwrigth install`
+```python -m venv venv
+pip install -r requirements.txt
+npm i
+playwrigth install```
 
 ## Use
 Just use `npm run start` for execute all scripts.
